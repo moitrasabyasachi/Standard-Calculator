@@ -1,3 +1,3 @@
 # Standard-Calculator
 ## Platform: Kivy
-<img src="sc.jpg">
+<img src="sc.png">
