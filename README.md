@@ -1,1 +1,2 @@
 # Standard-Calculator
+## Platform: Kivy
