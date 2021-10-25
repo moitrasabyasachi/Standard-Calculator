@@ -1,0 +1,158 @@
+<MyRoot>:
+    text_input: text_input
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        spacing: 3
+        padding: 5        
+        MyTextInput:
+            id: text_input
+            focus: True
+            cursor_blink: False
+            background_color: (0,0,0,1)
+            foreground_color: (1,1,1,1)
+            font_size: 30
+            halign: "right"
+            padding_y: [self.height / 2.0 - (self.line_height / 2.0) * len(self._lines), 0] #middle
+            multiline: False
+            readonly: True
+        GridLayout:          
+            cols: 4                        
+            Button:
+                name: 'btn_clr'
+                text: 'C'
+                font_size: 20
+                color: (1, 0, 0, 1)
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_del'
+                text: u"\u00AB"
+                font_size: 20
+                color: (1, 0, 0, 1)
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_div'
+                text: chr(247)
+                font_size: 20
+                background_color: (1, 0, 1, 1)
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_mul'
+                text: chr(215)
+                font_size: 20
+                background_color: (1, 0, 1, 1)
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_7'
+                text: '7'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_8'
+                text: '8'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_9'
+                text: '9'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_sub'
+                text: '-'
+                font_size: 20
+                background_color: (1, 0, 1, 1)
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_4'
+                text: '4'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_5'
+                text: '5'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_6'
+                text: '6'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_add'
+                text: '+'
+                font_size: 20
+                background_color: (1, 0, 1, 1)
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_1'
+                text: '1'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_2'
+                text: '2'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_3'
+                text: '3'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Label:
+                text: ''
+            Button:
+                name: 'btn_paren'
+                text: '()'
+                font_size: 20
+                color: (1, 0, 1, 1)
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_0'
+                text: '0'
+                bold: True
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Button:
+                name: 'btn_pt'
+                text: '.'
+                font_size: 20
+                on_press: root.press_btn(self)
+                on_release: root.release_btn()
+            Widget:
+                Button:
+                    name: 'btn_res'
+                    pos: self.parent.pos
+                    height: self.parent.height * 2
+                    width: self.parent.width
+                    text: '='
+                    font_size: 20
+                    background_color: (1, 1, 0, 1)
+                    on_press: root.press_btn(self)
+
