@@ -1,3 +1,3 @@
 # Standard-Calculator
-## Platform: Kivy
+## Technologies used: Python/Kivy
 <img src="sc.png">
